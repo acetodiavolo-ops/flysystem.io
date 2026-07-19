@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Styleguide interna · Fly System</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .sg-label { font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; color: #a33a24; margin: 56px 0 20px; }
+  </style>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+
+  <!-- shared: header v1 · keep in sync -->
+  <header class="site-head">
+    <div class="wrap site-head__in">
+      <a class="brand" href="../index.html">
+        <img class="brand__logo" src="../assets/img/logo-300.png" alt="Fly System" width="300" height="80">
+        <span class="brand__tag">Distributore ufficiale</span>
+      </a>
+      <nav class="site-nav" aria-label="Navigazione principale">
+        <a href="../index.html#prodotti">Prodotti</a>
+        <a href="../bolla.html">Bolla</a>
+        <a href="../cataloghi.html">Cataloghi</a>
+        <a href="../index.html#chi-siamo">Chi siamo</a>
+        <a href="../contatti.html">Contatti</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Apri il menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- shared: menu v1 · keep in sync -->
+  <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="menu__top">
+      <span class="brand__name">Fly System</span>
+      <button class="menu__close" type="button" aria-label="Chiudi il menu">&#10005;</button>
+    </div>
+    <nav aria-label="Navigazione mobile">
+      <a href="../index.html#prodotti">Prodotti <span class="fine">01</span></a>
+      <a href="../bolla.html">Bolla <span class="fine">02</span></a>
+      <a href="../cataloghi.html">Cataloghi <span class="fine">03</span></a>
+      <a href="../index.html#chi-siamo">Chi siamo <span class="fine">04</span></a>
+      <a href="../contatti.html">Contatti <span class="fine">05</span></a>
+    </nav>
+    <div class="menu__contacts">
+      <a href="tel:+390541011058">T 0541&nbsp;011058</a>
+      <a href="mailto:info@flysystemrn.it">info@flysystemrn.it</a>
+      <span>Via Arti e Mestieri 3, 47838 Riccione RN</span>
+    </div>
+  </div>
+
+  <main id="main">
+    <div class="wrap">
+
+      <p class="sg-label">Tipografia</p>
+      <p class="eyebrow">Distributore ufficiale · Riccione, Italia</p>
+      <h1 class="h-display" style="margin-top:18px">Porte, serramenti e sistemi outdoor, distribuiti con <em>precisione</em>.</h1>
+      <p class="lead" style="margin-top:24px">Selezioniamo le migliori linee di produzione italiane e le distribuiamo ai professionisti: un solo interlocutore, listini B2B, consegna in cantiere.</p>
+      <h2 class="h2" style="margin-top:32px">Non produciamo. <em>Selezioniamo.</em></h2>
+      <h3 class="h3" style="margin-top:24px">Titolo di terzo livello</h3>
+      <p class="body-max" style="margin-top:12px">Corpo del testo. Fly System distribuisce porte, serramenti in PVC, vetrate panoramiche e sistemi outdoor per bar, ristoranti e cantieri in tutta Italia.</p>
+      <p class="fine" style="margin-top:12px">Testo fine per note e didascalie.</p>
+
+      <p class="sg-label">Quota tecnica + numeri cerchiati + fig</p>
+      <p class="dim" style="max-width:420px">11 cataloghi prodotto</p>
+      <div style="display:flex; gap:16px; margin-top:24px; align-items:center">
+        <span class="num-c">01</span>
+        <span class="num-c">07</span>
+        <span class="num-c">11</span>
+      </div>
+      <p class="fig"><b>Fig. 04</b> · Pedana termica</p>
+
+      <p class="sg-label">Bottoni e link</p>
+      <p style="display:flex; gap:16px; flex-wrap:wrap; align-items:center">
+        <a class="btn btn--solid" href="#">Scopri Bolla <span class="arr">&rarr;</span></a>
+        <a class="btn" href="#">Sfoglia i cataloghi</a>
+        <a class="link-arr" href="#">Tutti i cataloghi <span class="arr">&rarr;</span></a>
+      </p>
+
+      <p class="sg-label">Indice editoriale</p>
+      <ul class="index">
+        <li>
+          <a class="index-row" href="#">
+            <span class="num-c">01</span>
+            <span class="index-row__title">Porte</span>
+            <span class="index-row__desc">Da interni, filomuro, collezioni Materica e Loft &amp; Lumina.</span>
+            <span class="index-row__meta">5 cataloghi <span class="arr">&rarr;</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="index-row" href="#">
+            <span class="num-c">02</span>
+            <span class="index-row__title">Serramenti</span>
+            <span class="index-row__desc">Serramenti in PVC ad alta efficienza.</span>
+            <span class="index-row__meta">1 catalogo <span class="arr">&rarr;</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="index-row" href="#">
+            <span class="num-c">03</span>
+            <span class="index-row__title">Vetrate panoramiche</span>
+            <span class="index-row__desc">Vetrate scorrevoli per chiusure trasparenti.</span>
+            <span class="index-row__meta">Su richiesta <span class="arr">&rarr;</span></span>
+          </a>
+        </li>
+      </ul>
+
+      <p class="sg-label">Card catalogo</p>
+      <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:32px; max-width:760px">
+        <article class="cat-card">
+          <a class="cat-card__cover" href="#" aria-hidden="true" tabindex="-1" style="display:grid;place-items:center;color:var(--muted)">Copertina</a>
+          <div class="cat-card__body">
+            <h3 class="cat-card__title">Porte da interni</h3>
+            <p class="fine">36 pagine · PDF 8,2 MB</p>
+            <div class="cat-card__actions">
+              <a class="btn btn--solid" href="#">Sfoglia</a>
+              <a class="link-arr" href="#">Scarica <span class="arr">&darr;</span></a>
+            </div>
+          </div>
+        </article>
+        <article class="cat-card">
+          <a class="cat-card__cover" href="#" aria-hidden="true" tabindex="-1" style="display:grid;place-items:center;color:var(--muted)">Copertina</a>
+          <div class="cat-card__body">
+            <h3 class="cat-card__title">Vetrate panoramiche</h3>
+            <p class="fine">73 pagine · PDF 14 MB</p>
+            <div class="cat-card__actions">
+              <a class="btn btn--solid" href="#">Sfoglia</a>
+              <a class="link-arr" href="#">Scarica <span class="arr">&darr;</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <section class="dark section" style="margin-top:72px">
+      <div class="wrap">
+        <p class="sg-label" style="color:var(--blu-lift)">Sezione scura</p>
+        <p class="eyebrow">Il prodotto di punta</p>
+        <h2 class="h2" style="margin-top:16px">Un nuovo spazio per il tuo locale. <em>Tutto l&rsquo;anno.</em></h2>
+        <p class="lead" style="margin-top:20px">Bolla amplia gli spazi, protegge i clienti e crea un&rsquo;atmosfera unica, in ogni stagione.</p>
+        <p style="margin-top:28px; display:flex; gap:16px; flex-wrap:wrap">
+          <a class="btn btn--solid" href="#">Scopri Bolla <span class="arr">&rarr;</span></a>
+          <a class="btn" href="#">Richiedi informazioni</a>
+        </p>
+        <p class="dim" style="max-width:380px; margin-top:40px">Scheda tecnica in arrivo</p>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <p class="sg-label">Form</p>
+      <form data-validate novalidate style="display:grid; gap:28px; max-width:520px">
+        <div class="field">
+          <label for="sg-nome">Nome e cognome *</label>
+          <input id="sg-nome" name="nome" type="text" required placeholder="Marco Marchi">
+          <span class="field-err">Inserisci il tuo nome.</span>
+        </div>
+        <div class="field">
+          <label for="sg-oggetto">Oggetto</label>
+          <select id="sg-oggetto" name="oggetto">
+            <option value="bolla">Informazioni Bolla</option>
+            <option value="cataloghi">Cataloghi e listini</option>
+            <option value="preventivo">Preventivo</option>
+            <option value="altro">Altro</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="sg-msg">Messaggio *</label>
+          <textarea id="sg-msg" name="messaggio" required placeholder="Scrivi il tuo messaggio"></textarea>
+          <span class="field-err">Scrivi un messaggio.</span>
+        </div>
+        <label class="check">
+          <input type="checkbox" required>
+          <span>Ho letto l&rsquo;informativa privacy e acconsento al trattamento dei dati.</span>
+        </label>
+        <p><button class="btn btn--solid" type="submit">Invia richiesta</button></p>
+      </form>
+
+      <p class="sg-label">FAQ</p>
+      <div class="faq" style="max-width:760px">
+        <details>
+          <summary>Consegnate direttamente in cantiere?</summary>
+          <div><p>S&igrave;: coordiniamo la consegna con i tempi del cantiere, su tutto il territorio nazionale.</p></div>
+        </details>
+        <details>
+          <summary>Avete listini riservati ai rivenditori?</summary>
+          <div><p>S&igrave;: listini B2B dedicati a rivenditori e serramentisti. Contattaci per riceverli.</p></div>
+        </details>
+      </div>
+    </div>
+  </main>
+
+  <!-- shared: footer v1 · keep in sync -->
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="site-foot__grid">
+        <div>
+          <span class="brand__name">Fly System</span>
+          <span class="brand__tag">Distributore ufficiale</span>
+          <p class="foot-positioning">Distributore ufficiale di porte, serramenti e sistemi outdoor. Riccione, Italia.</p>
+        </div>
+        <div>
+          <h2>Esplora</h2>
+          <ul>
+            <li><a href="../index.html#prodotti">Prodotti</a></li>
+            <li><a href="../bolla.html">Bolla</a></li>
+            <li><a href="../cataloghi.html">Cataloghi</a></li>
+            <li><a href="../index.html#chi-siamo">Chi siamo</a></li>
+            <li><a href="../contatti.html">Contatti</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contatti</h2>
+          <address>
+            <span>Via Arti e Mestieri 3<br>47838 Riccione RN</span>
+            <a href="tel:+390541011058">T 0541&nbsp;011058</a>
+            <a href="tel:+393274679241">M 380&nbsp;897&nbsp;2795</a>
+            <a href="mailto:info@flysystemrn.it">info@flysystemrn.it</a>
+            <a href="https://www.instagram.com/flysystem.it/" rel="noopener">Instagram</a>
+          </address>
+        </div>
+      </div>
+      <div class="site-foot__legal">
+        <span>&copy; 2026 Fly System Srls · P.IVA 00000000000</span>
+        <span>Riccione, Italia</span>
+      </div>
+      <div class="site-foot__giant" aria-hidden="true"></div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

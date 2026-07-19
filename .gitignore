@@ -1,0 +1,9 @@
+# dipendenze e artefatti degli script di sviluppo
+tools/node_modules/
+tools/package-lock.json
+__pycache__/
+*.pyc
+
+# file di sistema
+Thumbs.db
+.DS_Store
