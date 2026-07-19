@@ -47,7 +47,7 @@ def main(hero_p: Path, logo_p: Path, font_p: Path, out: Path):
     d.line([x1, y - 6, x1, y + 6], fill=NAVY, width=1)
     d.line([x2, y - 6, x2, y + 6], fill=NAVY, width=1)
     small = ImageFont.truetype(str(font_p), 17)
-    loc = "RICCIONE, ITALIA"
+    loc = "IN ITALIA E NEL MONDO"
     lw2 = d.textlength(loc, font=small)
     d.rectangle([(PANEL - lw2) / 2 - 14, y - 12, (PANEL + lw2) / 2 + 14, y + 12], fill=PAPER)
     d.text(((PANEL - lw2) / 2, y - 9), loc, font=small, fill=NAVY)
