@@ -165,12 +165,16 @@
   }
 
   img,
-  picture,
   svg,
   video {
     display: block;
     max-width: 100%;
     height: auto;
+  }
+
+  /* i wrapper <picture> non generano box: layout identico a un <img> diretto */
+  picture {
+    display: contents;
   }
 
   a {
@@ -429,7 +433,7 @@
     overflow: hidden;
   }
 
-  .o-mask > img {
+  .o-mask img {
     inline-size: 100%;
     block-size: 100%;
     object-fit: cover;
@@ -521,6 +525,14 @@
 
   .link-arr:hover .arr {
     translate: 4px 0;
+  }
+
+  /* area tattile piu comoda sui dispositivi touch */
+  @media (hover: none) {
+    .link-arr,
+    .jump a {
+      padding-block: 6px;
+    }
   }
 
   /* ---- header ---- */
@@ -656,7 +668,8 @@
     flex-direction: column;
     background: var(--ink);
     color: var(--paper);
-    padding: 24px var(--pad-x) 48px;
+    padding: 24px var(--pad-x) calc(48px + env(safe-area-inset-bottom, 0px));
+    overflow-y: auto;
     visibility: hidden;
     opacity: 0;
     transition: opacity var(--t-med) ease, visibility 0s linear var(--t-med);
@@ -2215,6 +2228,16 @@
   @media (max-width: 640px) {
     .prof-grid {
       grid-template-columns: 1fr;
+    }
+
+    .cat-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .cat-card__actions {
+      flex-wrap: wrap;
+      gap: 8px 16px;
     }
 
     .facts {

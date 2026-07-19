@@ -1,12 +1,14 @@
-// Screenshot harness: node shot.mjs <url-or-file> <out.png> [width] [height] [--full]
-// Uses installed Edge via playwright-core (no browser download).
+// Screenshot harness: node shot.mjs <url-or-file> <out.png> [width] [height] [--full] [--menu]
+// Uses installed Edge via playwright-core (no browser download). --menu opens the mobile menu first.
 import { chromium } from "playwright-core";
 import { pathToFileURL } from "node:url";
 import { resolve } from "node:path";
 
-const [, , target, out, w = "1440", h = "900", full] = process.argv;
+const [, , target, out, w = "1440", h = "900", ...flags] = process.argv;
+const full = flags.includes("--full") ? "--full" : "";
+const menu = flags.includes("--menu");
 if (!target || !out) {
-  console.error("usage: node shot.mjs <url-or-file> <out.png> [width] [height] [--full]");
+  console.error("usage: node shot.mjs <url-or-file> <out.png> [width] [height] [--full] [--menu]");
   process.exit(1);
 }
 const url = /^https?:|^file:/.test(target) ? target : pathToFileURL(resolve(target)).href;
@@ -32,6 +34,10 @@ await page.evaluate(async () => {
 });
 await page.waitForLoadState("networkidle");
 await page.waitForTimeout(400);
+if (menu) {
+  await page.click(".nav-toggle");
+  await page.waitForTimeout(600);
+}
 await page.screenshot({ path: out, fullPage: full === "--full" });
 // report layout health
 const overflow = await page.evaluate(() => {
