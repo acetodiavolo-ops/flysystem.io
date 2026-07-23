@@ -18,6 +18,7 @@
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preload" href="assets/fonts/Zodiak-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/GeneralSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" type="image/avif" imagesrcset="assets/img/cataloghi/lead-480.avif 480w, assets/img/cataloghi/lead-960.avif 960w, assets/img/cataloghi/lead-1600.avif 1600w, assets/img/cataloghi/lead-1781.avif 1781w" imagesizes="100vw">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -72,14 +73,21 @@
         <p class="eyebrow rv">La libreria</p>
         <h1 class="h-display rv" id="page-title">Cataloghi</h1>
         <p class="lead rv">Consulta e scarica i cataloghi ufficiali delle linee che distribuiamo. Per listini riservati e condizioni B2B, <a href="contatti.html?oggetto=cataloghi">contattaci</a>.</p>
-        <p class="dim dim--s rv">11 cataloghi &middot; 4 capitoli</p>
+        <p class="dim dim--s rv">10 cataloghi &middot; 4 capitoli</p>
         <ul class="jump rv" aria-label="Indice delle sezioni">
-          <li><a href="#porte">Porte <i>05</i></a></li>
+          <li><a href="#porte">Porte <i>04</i></a></li>
           <li><a href="#porte-tecniche">Porte tecniche <i>02</i></a></li>
           <li><a href="#serramenti-vetrate">Serramenti &amp; Vetrate <i>02</i></a></li>
           <li><a href="#outdoor">Outdoor &amp; Sistemi <i>02</i></a></li>
         </ul>
       </div>
+      <figure class="cat-lead rv-img">
+        <picture>
+          <source type="image/avif" srcset="assets/img/cataloghi/lead-480.avif 480w, assets/img/cataloghi/lead-960.avif 960w, assets/img/cataloghi/lead-1600.avif 1600w, assets/img/cataloghi/lead-1781.avif 1781w" sizes="100vw">
+          <source type="image/webp" srcset="assets/img/cataloghi/lead-480.webp 480w, assets/img/cataloghi/lead-960.webp 960w, assets/img/cataloghi/lead-1600.webp 1600w, assets/img/cataloghi/lead-1781.webp 1781w" sizes="100vw">
+          <img src="assets/img/cataloghi/lead-960.jpg" srcset="assets/img/cataloghi/lead-480.jpg 480w, assets/img/cataloghi/lead-960.jpg 960w, assets/img/cataloghi/lead-1600.jpg 1600w, assets/img/cataloghi/lead-1781.jpg 1781w" sizes="100vw" width="1781" height="1051" alt="Vetrata panoramica pieghevole aperta su un cortile con tavolini" fetchpriority="high">
+        </picture>
+      </figure>
     </section>
 
     <!-- ============ CAPITOLO 1 · PORTE ============ -->
@@ -87,8 +95,8 @@
       <div class="wrap cat-chapter">
         <div class="cat-rail rv">
           <h2 class="h2" id="porte-title">Porte</h2>
-          <p class="dim">05 cataloghi</p>
-          <p class="fine">Collezioni da interni e soluzioni filomuro, dalle linee classiche alle materiche.</p>
+          <p class="dim">04 cataloghi</p>
+          <p class="fine">Collezioni da interni e soluzioni filomuro, dalle linee classiche alle laccate.</p>
         </div>
         <div class="cat-grid" data-rv-group>
           <article class="cat-card rv">
@@ -128,24 +136,6 @@
             </div>
           </article>
           <article class="cat-card rv">
-            <a class="cat-card__cover" href="assets/pdf/fly-system-collezione-materica.pdf" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-              <picture>
-                <source type="image/avif" srcset="assets/img/cataloghi/covers/c-materica-480.avif 480w, assets/img/cataloghi/covers/c-materica-960.avif 960w" sizes="(max-width: 640px) 46vw, 300px">
-                <source type="image/webp" srcset="assets/img/cataloghi/covers/c-materica-480.webp 480w, assets/img/cataloghi/covers/c-materica-960.webp 960w" sizes="(max-width: 640px) 46vw, 300px">
-                <img src="assets/img/cataloghi/covers/c-materica-480.jpg" srcset="assets/img/cataloghi/covers/c-materica-480.jpg 480w, assets/img/cataloghi/covers/c-materica-960.jpg 960w" sizes="(max-width: 640px) 46vw, 300px" width="1320" height="1580" alt="" loading="lazy" decoding="async">
-              </picture>
-            </a>
-            <div class="cat-card__body">
-              <p class="cat-card__num">Cat. 03</p>
-              <h3 class="cat-card__title">Collezione Materica</h3>
-              <p class="fine">123 pagine &middot; PDF 30 MB</p>
-              <div class="cat-card__actions">
-                <a class="link-arr" href="assets/pdf/fly-system-collezione-materica.pdf" target="_blank" rel="noopener">Sfoglia <span class="arr">&rarr;</span></a>
-                <a class="link-arr" href="assets/pdf/fly-system-collezione-materica.pdf" download>Scarica <span class="arr">&darr;</span></a>
-              </div>
-            </div>
-          </article>
-          <article class="cat-card rv">
             <a class="cat-card__cover" href="assets/pdf/fly-system-collezione-loft-lumina.pdf" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
               <picture>
                 <source type="image/avif" srcset="assets/img/cataloghi/covers/c-loft-lumina-480.avif 480w, assets/img/cataloghi/covers/c-loft-lumina-960.avif 960w" sizes="(max-width: 640px) 46vw, 300px">
@@ -154,7 +144,7 @@
               </picture>
             </a>
             <div class="cat-card__body">
-              <p class="cat-card__num">Cat. 04</p>
+              <p class="cat-card__num">Cat. 03</p>
               <h3 class="cat-card__title">Collezione Loft &amp; Lumina</h3>
               <p class="fine">21 pagine &middot; PDF 12 MB</p>
               <div class="cat-card__actions">
@@ -172,7 +162,7 @@
               </picture>
             </a>
             <div class="cat-card__body">
-              <p class="cat-card__num">Cat. 05</p>
+              <p class="cat-card__num">Cat. 04</p>
               <h3 class="cat-card__title">Collezione Porte 2025</h3>
               <p class="fine">42 pagine &middot; PDF 17 MB &middot; con gamma RAL</p>
               <div class="cat-card__actions">
@@ -203,7 +193,7 @@
               </picture>
             </a>
             <div class="cat-card__body">
-              <p class="cat-card__num">Cat. 06</p>
+              <p class="cat-card__num">Cat. 05</p>
               <h3 class="cat-card__title">Porte REI</h3>
               <p class="fine">6 pagine &middot; PDF 2 MB &middot; linee hotel e collettivit&agrave;</p>
               <div class="cat-card__actions">
@@ -221,7 +211,7 @@
               </picture>
             </a>
             <div class="cat-card__body">
-              <p class="cat-card__num">Cat. 07</p>
+              <p class="cat-card__num">Cat. 06</p>
               <h3 class="cat-card__title">Porte tagliafuoco</h3>
               <p class="fine">29 pagine &middot; PDF 35 MB &middot; REI 30-120</p>
               <div class="cat-card__actions">
@@ -252,7 +242,7 @@
               </picture>
             </a>
             <div class="cat-card__body">
-              <p class="cat-card__num">Cat. 08</p>
+              <p class="cat-card__num">Cat. 07</p>
               <h3 class="cat-card__title">Serramenti in PVC</h3>
               <p class="fine">36 pagine &middot; PDF 36 MB</p>
               <div class="cat-card__actions">
@@ -270,7 +260,7 @@
               </picture>
             </a>
             <div class="cat-card__body">
-              <p class="cat-card__num">Cat. 09</p>
+              <p class="cat-card__num">Cat. 08</p>
               <h3 class="cat-card__title">Vetrate panoramiche scorrevoli</h3>
               <p class="fine">73 pagine &middot; PDF 35 MB &middot; scorrevoli e pieghevoli</p>
               <div class="cat-card__actions">
@@ -301,7 +291,7 @@
               </picture>
             </a>
             <div class="cat-card__body">
-              <p class="cat-card__num">Cat. 10</p>
+              <p class="cat-card__num">Cat. 09</p>
               <h3 class="cat-card__title">Pedana termica</h3>
               <p class="fine">7 pagine &middot; PDF 2 MB &middot; outdoor 365 giorni</p>
               <div class="cat-card__actions">
@@ -319,7 +309,7 @@
               </picture>
             </a>
             <div class="cat-card__body">
-              <p class="cat-card__num">Cat. 11</p>
+              <p class="cat-card__num">Cat. 10</p>
               <h3 class="cat-card__title">Controtelai</h3>
               <p class="fine">33 pagine &middot; PDF 7 MB &middot; linee interni</p>
               <div class="cat-card__actions">

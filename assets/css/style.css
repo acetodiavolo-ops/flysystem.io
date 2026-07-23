@@ -1288,6 +1288,126 @@
     margin-top: 14px;
   }
 
+  /* ---- sezione Porte: mosaico fotografico + tipologie ---- */
+
+  .porte-lead {
+    max-width: 40em;
+    margin-top: 22px;
+  }
+
+  .porte-mosaic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(10px, 1.3vw, 18px);
+    margin-top: clamp(36px, 5vw, 64px);
+  }
+
+  .porte-mosaic figure {
+    margin: 0;
+  }
+
+  .porte-mosaic img {
+    inline-size: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+  }
+
+  .porte-mosaic .m-hotel img {
+    object-position: 74% 50%;
+  }
+
+  .porte-mosaic .fig {
+    margin-top: 12px;
+  }
+
+  .tipologie {
+    margin: clamp(40px, 5.5vw, 68px) 0 0;
+    border-top: 1px solid var(--rule);
+  }
+
+  .tipologie > div {
+    display: grid;
+    grid-template-columns: minmax(0, 15em) minmax(0, 1fr);
+    align-items: baseline;
+    gap: 10px clamp(20px, 4vw, 56px);
+    padding-block: clamp(18px, 2.4vw, 28px);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .tipologie dt {
+    font-weight: 500;
+    font-size: clamp(1.1rem, 1.7vw, 1.375rem);
+    letter-spacing: -0.01em;
+  }
+
+  .tipologie dd {
+    margin: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px clamp(24px, 4vw, 56px);
+  }
+
+  .tipologie .t-desc {
+    color: var(--fg-soft);
+    max-width: 34em;
+  }
+
+  .tipologie .tag {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--fg-muted);
+    white-space: nowrap;
+    flex: none;
+  }
+
+  .porte-cta {
+    margin-top: clamp(32px, 4vw, 48px);
+  }
+
+  /* lead fotografica pagina cataloghi */
+  .cat-lead {
+    margin: clamp(32px, 5vw, 56px) 0 0;
+  }
+
+  .cat-lead img {
+    inline-size: 100%;
+    block-size: clamp(300px, 52vh, 600px);
+    object-fit: cover;
+  }
+
+  @media (max-width: 720px) {
+    .porte-mosaic {
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .porte-mosaic .m-wide {
+      grid-column: 1 / -1;
+    }
+
+    .porte-mosaic .m-wide img {
+      aspect-ratio: 16 / 10;
+    }
+
+    .tipologie > div {
+      grid-template-columns: 1fr;
+      gap: 4px;
+    }
+
+    .tipologie dd {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: 4px;
+    }
+
+    .cat-lead img {
+      block-size: clamp(240px, 44vh, 380px);
+    }
+  }
+
   /* ---- fatti reali ---- */
 
   .facts {
