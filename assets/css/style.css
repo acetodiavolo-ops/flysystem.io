@@ -1278,6 +1278,34 @@
     margin: 0;
   }
 
+  /* parallasse fotografica al passaggio (CSS puro, progressivo, gated) */
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      .hero-band,
+      .photo-band,
+      .cat-lead {
+        overflow: clip;
+      }
+
+      .hero-band img,
+      .photo-band img,
+      .cat-lead img {
+        animation: band-parallax linear both;
+        animation-timeline: view();
+        will-change: transform;
+      }
+
+      @keyframes band-parallax {
+        from {
+          transform: scale(1.12) translateY(-4.2%);
+        }
+        to {
+          transform: scale(1.12) translateY(4.2%);
+        }
+      }
+    }
+  }
+
   .photo-band img {
     inline-size: 100%;
     block-size: clamp(300px, 56vh, 620px);
